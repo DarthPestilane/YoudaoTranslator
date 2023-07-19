@@ -12,4 +12,4 @@ const main = async () => {
   console.log(result);
 }
 
-main();
+setTimeout(() => { main(); }, Number(tjs.getenv('delay')) || 400);
